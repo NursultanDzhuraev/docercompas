@@ -5,11 +5,13 @@ parameters:
     type: string
     default: "dockerdemo"
 
+
 jobs:
   install-docker-if-not-exists:
     docker:
       - image: circleci/node:14
     steps:
+      - checkout
       - run:
           name: Install SSH And Configure
           command: |
