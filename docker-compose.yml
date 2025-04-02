@@ -1,6 +1,6 @@
 version : "3.9"
 services :
-  backent:
+  backend:
     image: '#image'
     container_name: docercompas
     restart: always
